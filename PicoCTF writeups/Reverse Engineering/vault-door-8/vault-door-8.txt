@@ -1,0 +1,3 @@
+1) clean up the code, im sure there is an online tool for this but i did it manually and it took 2 mins
+2) make a simple java program to reverse the steps they have taken
+3) or alternativley you can use the scripts I have made

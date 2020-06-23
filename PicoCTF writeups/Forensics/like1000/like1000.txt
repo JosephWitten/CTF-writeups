@@ -1,0 +1,5 @@
+1) create new folder
+2) put like1000.py and 1000.tar in folder
+3) run the command, python like1000.py
+4) after 1.tar has been opened you will find "flag.png" (the flag is in a png so you cant use the strings command on 1000.tar)
+5) ta da 

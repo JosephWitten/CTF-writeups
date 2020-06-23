@@ -1,0 +1,7 @@
+1) Put pcap into wireshark
+2) right click on a udp packet and click "follow udp stream"
+3) at the bottom right there is a increment button, as you follow the streams the flag is slowley leaked to you
+	picoCTF{StaT31355eCTF_36}
+4) there is a udp stream saying "start" (32) and "end" (60)
+5) going back out to the wider view and sorting by protocols, the "start" packet is udp packet 1104 and the "end" one is 1303
+6) as you can see the source port between these two packets differ from the ones before, if you take the last 3 digits of each port and convert it to ascii you will get the flag (only the packets witht the destination port of 22)

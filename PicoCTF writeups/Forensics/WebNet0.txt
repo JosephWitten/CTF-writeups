@@ -1,0 +1,5 @@
+1) download both files
+2) open pcap in wireshark
+3) edit > preferences > protocals > TSL > add RSA key. Select the key file
+4) right click the encrypted TSL file and click "Decode as", decode it
+5) one of the headers contains the flag.

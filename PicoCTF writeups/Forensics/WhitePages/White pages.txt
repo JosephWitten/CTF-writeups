@@ -1,0 +1,4 @@
+1) the string is actually compossed of spaces and invisible dots, this is only noticable in some text editors, or a hex editor.
+2) convert the dots to 1s and the spaces to 0s
+3) convert the binary to ascii
+4) read flag

@@ -1,0 +1,4 @@
+1) open source code
+2) copy the text "JTYzJTMwJTZlJTc2JTMzJTcyJTc0JTMxJTZlJTY3JTVmJTY2JTcyJTMwJTZkJTVmJTYyJTYxJTM1JTY1JTVmJTM2JTM0JTVmJTMwJTY2JTMzJTMwJTM5JTY0JTM0JTMw" and decode it from base 64
+3) decode the result "%63%30%6e%76%33%72%74%31%6e%67%5f%66%72%30%6d%5f%62%61%35%65%5f%36%34%5f%30%66%33%30%39%64%34%30" from urldecoding to get the flag
+4) c0nv3rt1ng_fr0m_ba5e_64_0f309d40

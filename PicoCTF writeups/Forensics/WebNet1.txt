@@ -1,0 +1,3 @@
+1) follow the same process as webnet0 in decrypting the TLS
+2) right click > follow HTTP stream > ctrl f for "pico" 
+3) cycle through untill flag is located

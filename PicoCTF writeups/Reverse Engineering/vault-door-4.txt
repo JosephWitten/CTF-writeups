@@ -1,0 +1,7 @@
+1) Open source
+There is a comment mentioning about different bases so we will convert each line into ascii from it's base
+2) convert first line into ascii from decimal "106 85 53 116 95 52 95 98" -> "jU5t_4_b" (from base10)
+3) convert second line into ascii from hex "55 6e 43 68 5f 30 66 5f" -> "UnCh_0f_" (from base16)
+4) convert third line into ascii from octal (remove zeros at the start) "142 131 164 63 163 137 63 141" -> "bYt3s_3a" (from base8)
+5) There is no conversion on the last line just remove spacing and padding "724c8f92"
+6) Combine to get flag "jU5t_4_bUnCh_0f_bYt3s_3a724c8f92" and put it in picoCTF{} format

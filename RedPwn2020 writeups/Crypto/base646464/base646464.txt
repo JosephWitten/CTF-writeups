@@ -1,0 +1,2 @@
+decrypt base64 string 25 times
+you can use the basi cscript i wrote to do so

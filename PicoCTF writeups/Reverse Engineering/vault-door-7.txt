@@ -1,0 +1,23 @@
+1) put decimal numbers into hex
+2) convert hex to ascii
+
+you could do this manually or i made a script to do so
+
+function hex2a(hexx) {
+    var hex = hexx.toString();//force conversion
+    var str = '';
+    for (var i = 0; (i < hex.length && hex.substr(i, 2) !== '00'); i += 2)
+        str += String.fromCharCode(parseInt(hex.substr(i, 2), 16));
+    return str;
+}
+
+var array = [1096770097, 1952395366, 1600270708, 1601398833, 1716808014, 1734304870, 895891557, 1681142832]
+var final = ""
+for (let i = 0; i < array.length; i++){
+
+	hex = array[i].toString(16)
+	ascii = hex2a(hex)
+	final = final + ascii
+}
+
+console.log(final)

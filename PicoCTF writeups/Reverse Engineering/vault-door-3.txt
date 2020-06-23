@@ -1,0 +1,16 @@
+1) open source code
+2) In order to open the door your input must be 32 characters long, and make the "checkPassword" function return true
+3) at the bottom there is the string "jU5t_a_sna_3lpm17ga45_u_4_mbrf4c", apply each for loop to the password and you will get the flag
+
+I wrote this javascript program to solve it which can be pasted in console in a web browser
+
+var password = "jU5t_a_sna_3lpm17ga45_u_4_mbrf4c"
+var i
+var buffer = Array(32);
+for (i=0; i<8; i++) { buffer[i] = password.charAt(i)}
+for (; i<16; i++) {buffer[i] = password.charAt(23-i)}
+for (; i<32; i+=2) { buffer[i] = password.charAt(46-i) }
+for (i=31; i >= 17; i -=2) { buffer[i] = password.charAt(i)}
+console.log(buffer.toString())
+
+4) remove commas and put in picoCTF{flag} format
