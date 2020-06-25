@@ -1,0 +1,9 @@
+1) wfuzz -w /usr/share/wordlists/dirb/common.txt host:3000/FUZZ | grep 200
+2) the first answer is the new page you find from wfuzz, /sysadmin
+3) on the sysadmin page the source code contains a comment referencing a github page, navigate to ti and there is a file there
+https://github.com/ashu-savani/arctic-digital-design
+
+    username: admin
+    password: defaultpass
+4) the second questions' answer is defaultpass
+5) log into the admin page, and you will see the answer to the last question is "eggnog"
