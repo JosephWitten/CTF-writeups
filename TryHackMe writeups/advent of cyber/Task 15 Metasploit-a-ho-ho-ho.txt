@@ -1,0 +1,5 @@
+1) run an nmap scan on your IP (remember to connect to the network with openvpn, I definetly didn't waste 20 mins wondering why i couldnt find an open port)
+2) we now know there are 3 ports open, 22 (ssh), 80 (a web server, Apache Tomcat/Coyote JSP engine 1.1), and 111 (rpcbind)
+3) msfconsole
+4) search 'Apache Tomcat/Coyote JSP engine 1.1'`
+5) use exploit/multi/http/tomcat_jsp_upload_bypass
