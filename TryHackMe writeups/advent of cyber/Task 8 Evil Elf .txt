@@ -1,0 +1,5 @@
+1) download pcap and open in wireshark
+2) go to packet 998
+3) first answer is the destination ip
+4) open tcp stream, the second answer is "ps4"
+5) open tcp stream, copy the password hash into a file. sudo john hash.txt. password is rainbow
