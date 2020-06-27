@@ -1,0 +1,8 @@
+1) nmap ip -p1-1000
+there are 3 ports up
+2) nmap ip -O
+OS is linux
+3) nmap ip -p 22 -sV
+version is 7.4
+4) got to browser and type ip:999
+file name is interesting.file

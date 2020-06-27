@@ -1,0 +1,3 @@
+1) go to each url and record letters that start with "value"
+sCrIPtKiDd
+this challenge was supposed to teach you about python requests but was easy enough to do by hand

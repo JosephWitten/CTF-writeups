@@ -1,0 +1,5 @@
+1) download and run the command
+exiftool thegrinch.jpg
+2) you see the creator name "JLolax1", google this and find a twitter page. get the first three answers here
+3) to find the date, use the way back machine on the site url (not the pictures), the instance on the wayback machine tells you the date was 5 years ago on that day.
+4) for the last one, reverse image search and find the name ada lovelace

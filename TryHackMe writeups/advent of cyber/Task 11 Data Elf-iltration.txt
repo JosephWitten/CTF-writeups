@@ -1,0 +1,9 @@
+1) download pcap and open in wireshark
+2) decode the hex value in the dns packet
+3) first answer is Candy Cane Serial Number 8491
+4) file > export objects > http
+5) unzip the zip file, its got a password so use a tool do crack it, i used fcrackzip
+6) unzip it
+7) cat christmasslisttimmy.txt and you have what they want
+8) steghide extract -sf TryHackMe.jpg, with no password gives you a file
+the 6 digit code at the top is the flag
