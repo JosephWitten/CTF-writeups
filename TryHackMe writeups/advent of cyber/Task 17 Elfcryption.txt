@@ -1,0 +1,6 @@
+1) md5sum note1.txt.gpg
+2) gpg note1.txt.gpg, enter the password 25daysofchristmas. (Annoyingly it says this in the hint which makes it feel like I cheated, but after I completed this challenge I looked for writeups and no one else found an alternate method)
+3) cat note1.txt
+4) openssl rsa -n privatekey -out out.key, the passphrase is "hello" (once again it says this in the hint)
+5) openssl rsautl -decrypt -in note2_encrypted.txt -out flag.txt -inkey out.key
+6) cat flag.txt

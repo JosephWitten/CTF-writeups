@@ -1,0 +1,3 @@
+1) go to advent-bucket-one.s3.amazonaws.com
+2) the file name is there
+3) go to advent-bucket-one.s3.amazonaws.com/filename

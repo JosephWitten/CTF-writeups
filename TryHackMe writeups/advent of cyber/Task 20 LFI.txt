@@ -1,0 +1,6 @@
+1) enter IP in browser
+2) first question is in the note
+3) in burp change the get request to IP/get-file/%2fetc%2fshadow, i tried this in the browser and it didnt work for some reason but it worked in burp
+4) use john or hashcat to crack the password
+5) use the username and password to ssh into charlie's account
+6) cat flag1.txt

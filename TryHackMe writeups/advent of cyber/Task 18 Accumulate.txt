@@ -1,0 +1,14 @@
+1) run nmap on the IP
+2) we're trying to find a directory on the site so run dirb on the host, dirb http://IP/, I didnt find anything so I tried using wfuzz to do the same thing with, wfuzz -w big.txt http://IP/FUZZ | grep 200, and still nothing. Lastly i tried grepping for 301 in case it was a redirect link and there was success, "retro", odd considering my wordlist for dirb had retro in it
+3) running dirb on the new directory reveals http://10.10.122.175/retro/xmlrpc.php which looking up reveals this may be a vunerability
+4) after enumerating the website I see an odd note with a single word "parzival" my guess is this is a password to something, i remembered from the nmap scan there was a web server running on port 3389
+5) i needed to install a software called remmina to access this so i did, sudo apt-get install remmina, after running remmina i entered both the password and username
+6) after logging in to the wbs (I hope you can appreciate the wierdness of running a windows environment in a kali vm on a windows host) there us the user.txt doc on the desktop
+7) open hhupd
+8) click on more details
+9) click show info about cetificate
+10) click hyperlink
+11) close everything
+12) an intermet explorer window comes up, ctrl s
+13) set directory to C:/Windows/System32/cmd.exe
+14) navigate to root Desktop and open the text file
