@@ -1,0 +1,20 @@
+1) use script to unzip all files and after use, ls | wc -l, to count files
+2) exiftools * | grep 1.1, count the amount of '1.1's
+3) grep -rnw './' -e "password"
+
+import os
+import zipfile
+
+print("ctf")
+var = os.listdir("/home/kali/Desktop/BigZip/")
+print(var)
+
+files = 0
+
+for i in var:
+	if (i.find('zip') != -1):
+		zf = zipfile.ZipFile("./BigZip/" + str(i), "r")
+		zf.extractall('./BigZip/')
+		os.remove('./BigZip/' + i)
+		files = files + 1
+print(files)
