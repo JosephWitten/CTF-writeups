@@ -1,0 +1,7 @@
+note: I had alot of connection issues with this particular machine, I think it's because the amount of post requests from everyone doing this at the same time acts as a dos attack, so be patient
+
+1) hydra -l molly -P rockyou.txt 10.10.66.161 http-post-form "/login:username^USER^&password=^PASS^&error=incorrect"
+This will take 10 years to complete, especially on a slower machine
+
+2) I hated hydra so i looked for alternatives, luckily metasploit has an ssh bruteforcer, use auxiliary/scanner/ssh/ssh_login, so after configuring that and running it, it soon found the ssh password
+3) log in and find the flag

