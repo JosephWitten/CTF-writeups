@@ -1,0 +1,10 @@
+1) spoolsv.exe
+2) migrate -P 692
+3) getuid
+4) sysinfo
+5) load kiwi
+6) getprivs
+7) upload
+8) run
+9) ipconfig
+13) shell

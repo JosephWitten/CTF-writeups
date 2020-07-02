@@ -1,0 +1,12 @@
+2) ?
+3) search
+4) use
+5) info
+6) connect
+7) banner
+8) set
+9) setg
+10) get
+11) unset
+12) spool
+13) save

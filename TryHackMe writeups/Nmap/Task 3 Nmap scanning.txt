@@ -1,0 +1,6 @@
+1) nmap -ss
+2) 2
+3) tcp
+4) 6.6.1p1
+5) httponly
+6) http-slowloris-check

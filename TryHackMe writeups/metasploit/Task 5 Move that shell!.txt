@@ -1,0 +1,4 @@
+1) db_nmap -sV IP
+2) msrpc
+6) exploit/windows/http/icecast_header
+7) #

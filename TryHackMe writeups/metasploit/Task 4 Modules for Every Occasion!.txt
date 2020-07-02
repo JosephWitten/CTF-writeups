@@ -1,0 +1,7 @@
+1) exploit
+2) payload
+3) auxiliary
+4) post
+5) encoder
+6) NOP
+7) load
