@@ -1,0 +1,6 @@
+r2 -d ./file1
+db 0x00400b55
+px @rbp-0xc
+ds
+px @rbp-0xc
+set break points at other variables and then read their values

