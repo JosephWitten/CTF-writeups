@@ -1,0 +1,5 @@
+1) hashdump
+- Jon
+2) to crack the password you can use john or hashcat, but considering past hashes have been very basic passwords, we can just run it through a lookup table such as crackstation.net and it will return the password
+
+alqfna22

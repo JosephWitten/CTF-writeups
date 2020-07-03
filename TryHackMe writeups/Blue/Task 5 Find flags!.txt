@@ -1,0 +1,6 @@
+1) cd /
+- cat flag1.txt
+2) searcg -f flag2.txt
+- cat location
+3) search -f flag3.txt
+- cat location

